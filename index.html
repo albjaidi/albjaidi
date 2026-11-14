@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>زواجات البجايدة — رزنامة زواجات بجايدة القصيم</title>
+<meta name="description" content="رزنامة زواجات بجايدة القصيم — مواعيد الزواجات القادمة في مكان واحد.">
+<meta name="theme-color" content="#0e1c2b">
+<meta property="og:title" content="زواجات البجايدة">
+<meta property="og:description" content="رزنامة زواجات بجايدة القصيم — مواعيد الزواجات القادمة في مكان واحد">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://albjaidi.com/">
+<link rel="canonical" href="https://albjaidi.com/">
+<link rel="icon" type="image/png" href="assets/logo-192.png">
+<link rel="apple-touch-icon" href="assets/logo-192.png">
+<meta property="og:image" content="https://albjaidi.com/assets/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Aref+Ruqaa:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0e1c2b; --navy-2:#16324d; --gold:#b98f45; --gold-2:#d4b06a; --gold-soft:#ecdcb4;
+  --ivory:#f6f1e8; --paper:#fffdf8; --ink:#1b2733; --muted:#6b7785; --line:#e8dfcf; --tint:#f3ecdf;
+  --ok:#2e7d4f; --err:#b3261e;
+  --r-lg:22px; --r-md:14px;
+  --shadow:0 1px 2px rgba(14,28,43,.04), 0 10px 30px -12px rgba(14,28,43,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Tajawal",system-ui,sans-serif;background:var(--ivory);color:var(--ink);line-height:1.6;min-height:100vh}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:inherit}
+[hidden]{display:none!important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+svg.i{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;overflow:hidden;color:#f4efe5;text-align:center;padding:18px 20px 128px;
+  background:radial-gradient(900px 500px at 50% -20%,#24507a 0%,transparent 60%),linear-gradient(165deg,var(--navy-2),var(--navy))}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.08;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='88' viewBox='0 0 88 88'%3E%3Cg fill='none' stroke='%23d4b06a' stroke-width='1'%3E%3Crect x='26' y='26' width='36' height='36'/%3E%3Crect x='26' y='26' width='36' height='36' transform='rotate(45 44 44)'/%3E%3Ccircle cx='44' cy='44' r='8'/%3E%3Cpath d='M0 0L18 18M88 0L70 18M0 88L18 70M88 88L70 70'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:88px;-webkit-mask-image:linear-gradient(#000 30%,transparent);mask-image:linear-gradient(#000 30%,transparent)}
+.topbar{position:relative;max-width:760px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:14px}
+.topbar a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:#c9d3de;padding:8px 4px;letter-spacing:.03em}
+.topbar a:hover{color:#fff}
+.hero-in{position:relative;margin-top:14px}
+.logo{display:block;width:136px;height:auto;margin:0 auto 10px;filter:drop-shadow(0 12px 24px rgba(0,0,0,.35))}
+.hero h1{font-family:"Aref Ruqaa",serif;font-weight:700;font-size:clamp(40px,9vw,58px);line-height:1.25;color:#fbf6ea}
+.hero .tag{color:#b9c5d2;font-size:16px;margin-top:2px}
+.today{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:6px 10px;margin-top:20px;padding:9px 18px;border-radius:999px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(212,176,106,.28);font-size:14px;color:#e9e2d2}
+.today b{color:var(--gold-soft);font-weight:700}
+.today .sep{opacity:.35}
+
+/* ---------- Layout ---------- */
+.wrap{max-width:760px;margin:-92px auto 0;padding:0 16px 40px;position:relative}
+
+/* ---------- Featured ---------- */
+.featured{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:22px 22px 18px;position:relative;overflow:hidden}
+.featured::after{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:linear-gradient(90deg,var(--gold-soft),var(--gold-2),var(--gold-soft))}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--gold);letter-spacing:.02em}
+.eyebrow::before{content:"";width:7px;height:7px;background:var(--gold-2);transform:rotate(45deg)}
+.f-name{font-size:clamp(22px,5vw,27px);font-weight:800;margin-top:6px;line-height:1.35}
+.f-meta{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:8px;color:var(--muted);font-size:15px}
+.f-meta span{display:inline-flex;align-items:center;gap:6px}
+.days{display:flex;align-items:center;gap:16px;margin-top:18px;padding:14px 20px;border-radius:var(--r-md);background:var(--navy);color:#fbf6ea}
+.days b{font-size:46px;font-weight:800;line-height:1;color:var(--gold-soft);font-variant-numeric:tabular-nums}
+.days span{font-size:19px;font-weight:700;line-height:1.3}
+.days small{display:block;font-size:13px;font-weight:400;color:#aab6c3}
+.f-tonight{margin-top:16px;padding:14px;border-radius:var(--r-md);background:linear-gradient(135deg,var(--gold-soft),var(--gold-2));color:#2a2214;text-align:center;font-weight:800;font-size:18px}
+
+/* ---------- Toolbar ---------- */
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:28px 0 6px}
+.seg{display:inline-flex;background:var(--tint);border:1px solid var(--line);border-radius:12px;padding:4px}
+.seg button{border:0;background:none;padding:8px 16px;border-radius:9px;cursor:pointer;font-weight:700;font-size:15px;color:var(--muted);transition:.2s}
+.seg button[aria-selected="true"]{background:var(--paper);color:var(--ink);box-shadow:0 1px 3px rgba(14,28,43,.12)}
+.seg .n{font-weight:500;font-size:13px;opacity:.7;margin-inline-start:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;cursor:pointer;border-radius:12px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s}
+.btn-gold{background:linear-gradient(135deg,var(--gold-soft),var(--gold-2));color:#2a2214;padding:11px 18px;box-shadow:0 8px 20px -10px rgba(185,143,69,.8)}
+.btn-gold:hover{transform:translateY(-2px)}
+.btn-navy{background:var(--navy);color:#fbf6ea;padding:13px 20px}
+.btn-navy:hover{background:var(--navy-2)}
+.btn:focus-visible,.seg button:focus-visible,.act:focus-visible{outline:3px solid var(--gold-2);outline-offset:2px}
+
+/* ---------- Month groups & cards ---------- */
+.month{display:flex;align-items:center;gap:12px;margin:26px 0 12px;color:var(--navy);font-size:15px;font-weight:800}
+.month small{font-weight:500;color:var(--muted);font-size:13px}
+.month::after{content:"";flex:1;height:1px;background:var(--line)}
+.card{display:grid;grid-template-columns:86px 1fr;gap:16px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:14px;margin-bottom:12px;box-shadow:0 1px 2px rgba(14,28,43,.04);transition:box-shadow .25s,border-color .25s;scroll-margin-top:20px}
+.card:hover{box-shadow:var(--shadow)}
+.card.hl{border-color:var(--gold-2);box-shadow:0 0 0 4px rgba(212,176,106,.25)}
+.card.past{opacity:.72}
+.date{background:var(--tint);border-radius:var(--r-md);text-align:center;padding:10px 4px;display:flex;flex-direction:column;justify-content:center}
+.date .wd{font-size:12.5px;color:var(--muted)}
+.date .d{font-size:32px;font-weight:800;line-height:1.1;color:var(--navy);font-variant-numeric:tabular-nums}
+.date .m{font-size:13px;font-weight:700;color:var(--gold)}
+.date .g{font-size:11.5px;color:var(--muted);margin-top:4px;border-top:1px dashed #d9cdb6;padding-top:4px}
+.body{min-width:0;display:flex;flex-direction:column}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.lbl{font-size:12.5px;color:var(--muted)}
+.name{font-size:18px;font-weight:800;line-height:1.4;overflow-wrap:anywhere}
+.chip{flex:none;font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--tint);color:var(--muted);white-space:nowrap}
+.chip.soon{background:#f6ead0;color:#8a6420}
+.chip.now{background:var(--navy);color:var(--gold-soft)}
+.venue{display:flex;align-items:center;gap:6px;color:#4a5866;font-size:15px;margin-top:4px}
+.note{font-size:13.5px;color:var(--muted);margin-top:4px}
+.acts{display:flex;gap:6px;margin-top:auto;padding-top:12px;flex-wrap:wrap}
+.act{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:none;border-radius:10px;padding:7px 12px;font-size:14px;font-weight:500;color:#3b4855;text-decoration:none;cursor:pointer;transition:.2s}
+.act:hover{border-color:var(--gold-2);background:#fbf5e8;color:var(--ink)}
+.act svg.i{width:16px;height:16px}
+
+/* ---------- States ---------- */
+.empty{text-align:center;padding:44px 20px;color:var(--muted);background:var(--paper);border:1px dashed var(--line);border-radius:var(--r-lg);margin-top:16px}
+.empty b{display:block;color:var(--ink);font-size:17px;margin-bottom:4px}
+.sk{height:120px;border-radius:var(--r-lg);margin-bottom:12px;background:linear-gradient(90deg,#efe8db 25%,#f7f2e9 50%,#efe8db 75%);background-size:200% 100%;animation:sk 1.4s infinite}
+@keyframes sk{to{background-position:-200% 0}}
+.banner{font-size:13px;text-align:center;color:#8a6420;background:#fbf1da;border:1px solid #f0dfb4;border-radius:10px;padding:8px 12px;margin-top:14px}
+
+.suggest{display:flex;align-items:center;gap:14px;margin-top:28px;padding:16px 18px;border-radius:var(--r-lg);background:var(--tint);border:1px solid var(--line)}
+.sg-ic{width:42px;height:42px;border-radius:12px;background:var(--paper);display:grid;place-items:center;color:var(--gold);flex:none}
+.sg-tx{flex:1;min-width:0}
+.sg-tx b{display:block;font-size:15.5px}
+.sg-tx span{font-size:13.5px;color:var(--muted)}
+.btn-line{background:var(--paper);border:1px solid #d9cdb6;color:var(--navy);padding:10px 16px;flex:none}
+.btn-line:hover{border-color:var(--gold-2)}
+footer{text-align:center;color:var(--muted);font-size:13.5px;padding:10px 16px 36px}
+footer a{color:var(--navy);font-weight:700;text-decoration:none}
+
+/* ---------- Dialog (form) ---------- */
+dialog{border:0;padding:0;margin:auto;width:min(540px,calc(100% - 24px));max-height:calc(100vh - 32px);border-radius:24px;background:var(--paper);color:var(--ink);box-shadow:0 30px 80px -20px rgba(0,0,0,.45)}
+dialog::backdrop{background:rgba(9,18,28,.55);backdrop-filter:blur(3px)}
+dialog[open]{animation:pop .28s cubic-bezier(.2,.7,.2,1)}
+@keyframes pop{from{opacity:0;transform:translateY(16px)}}
+.dh{display:flex;justify-content:space-between;align-items:flex-start;padding:22px 22px 6px}
+.dh h2{font-size:21px;font-weight:800}
+.dh p{font-size:14px;color:var(--muted)}
+.x{border:0;background:var(--tint);width:36px;height:36px;border-radius:10px;cursor:pointer;display:grid;place-items:center;flex:none}
+form{padding:10px 22px 22px}
+.f{margin-top:14px}
+.f label,.f .legend{display:block;font-size:14px;font-weight:700;margin-bottom:6px}
+.f label em,.f .legend em{font-style:normal;color:var(--err)}
+.f .hint{font-size:12.5px;color:var(--muted);font-weight:400}
+.in{width:100%;height:48px;border:1px solid #ddd3c1;background:#fff;border-radius:12px;padding:0 14px;font-size:16px;transition:border-color .2s,box-shadow .2s}
+textarea.in{height:auto;min-height:76px;padding:12px 14px;resize:vertical}
+.in:focus{outline:0;border-color:var(--gold-2);box-shadow:0 0 0 4px rgba(212,176,106,.22)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.row3{display:grid;grid-template-columns:.8fr 1.5fr 1fr;gap:8px}
+.mini{display:inline-flex;background:var(--tint);border-radius:10px;padding:3px;margin-bottom:8px}
+.mini button{border:0;background:none;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:14px;font-weight:700;color:var(--muted)}
+.mini button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.conv{margin-top:8px;font-size:14px;padding:10px 12px;border-radius:10px;background:#f7f1e4;color:#5b4a2a;min-height:42px}
+.conv.bad{background:#fdecea;color:var(--err)}
+.hp{position:absolute;left:-9999px;opacity:0}
+.err{color:var(--err);font-size:14px;margin-top:12px;min-height:1em}
+.submit{width:100%;margin-top:16px;height:52px;font-size:17px}
+.submit[disabled]{opacity:.6;cursor:progress}
+.done{text-align:center;padding:30px 24px 26px}
+.done .ok{width:64px;height:64px;border-radius:50%;margin:0 auto 14px;display:grid;place-items:center;background:#e6f4ea;color:var(--ok)}
+.done .ok svg{width:30px;height:30px}
+.done h3{font-size:20px}
+.done p{color:var(--muted);margin:6px 0 18px}
+
+@media (max-width:560px){
+  .hero{padding-bottom:116px}
+  .logo{width:112px}
+  .today .sep{display:none}
+  .today{gap:2px 12px}
+  .card{grid-template-columns:74px 1fr;gap:12px;padding:12px}
+  .date .d{font-size:28px}
+  .name{font-size:17px}
+  .act{padding:7px 10px}
+  .act .t{display:none}
+  .act.map .t{display:inline}
+  .toolbar .btn-gold .t2{display:none}
+  dialog{width:100%;max-width:100%;margin:auto 0 0;border-radius:24px 24px 0 0;max-height:94vh}
+  .row{grid-template-columns:1fr}
+  .suggest{flex-wrap:wrap}
+  .suggest .btn-line{width:100%}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M8 2.5v4M16 2.5v4M3 10h18M12 13.5v4M10 15.5h4"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5"/><path d="M5 12v6.5A2.5 2.5 0 0 0 7.5 21h9a2.5 2.5 0 0 0 2.5-2.5V12"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5 10 17.5 19 7"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 5.5h16v10H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5"/></symbol>
+</svg>
+
+<header class="hero">
+  <div class="topbar">
+    <a href="https://alanazii.com/" aria-label="ALANAZII.COM"><svg class="i"><use href="#i-home"/></svg><span dir="ltr">ALANAZII.COM</span></a>
+  </div>
+  <div class="hero-in">
+    <img class="logo" src="assets/logo-512.png" width="136" height="136" alt="شعار ملتقى قبيلة البجايدة">
+    <h1>زواجات البجايدة</h1>
+    <p class="tag">رزنامة زواجات بجايدة القصيم</p>
+    <p class="today" id="today"></p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="featured" aria-live="polite"><div class="sk" style="height:220px"></div></section>
+
+  <div class="toolbar">
+    <div class="seg" role="tablist" aria-label="عرض الزواجات">
+      <button role="tab" id="tab-up" aria-selected="true">القادمة<span class="n" id="n-up"></span></button>
+      <button role="tab" id="tab-past" aria-selected="false">السابقة<span class="n" id="n-past"></span></button>
+    </div>
+    <button class="btn btn-gold" id="open-form"><svg class="i"><use href="#i-plus"/></svg>أضف زواجاً<span class="t2">&nbsp;للرزنامة</span></button>
+  </div>
+
+  <section id="list" aria-live="polite"><div class="sk"></div><div class="sk"></div></section>
+  <div id="banner"></div>
+
+  <section class="suggest">
+    <div class="sg-ic"><svg class="i"><use href="#i-msg"/></svg></div>
+    <div class="sg-tx"><b>ملاحظة أو تصحيح على موعد؟</b><span>أرسل اقتراحك أو طلب التعديل، وتراجعه الإدارة</span></div>
+    <button class="btn btn-line" id="open-sug">أرسل اقتراحاً</button>
+  </section>
+</main>
+
+<footer>
+  تُراجع الطلبات قبل نشرها · <a href="https://alanazii.com/" dir="ltr">alanazii.com</a>
+</footer>
+
+<!-- ============ نموذج الإضافة ============ -->
+<dialog id="dlg" aria-labelledby="dlg-t">
+  <div id="form-view">
+    <div class="dh">
+      <div><h2 id="dlg-t">إضافة زواج</h2><p>يُراجع الطلب ثم يظهر في الرزنامة</p></div>
+      <button class="x" type="button" data-close aria-label="إغلاق"><svg class="i"><use href="#i-x"/></svg></button>
+    </div>
+    <form id="frm" novalidate>
+      <div class="f">
+        <label for="f-name">اسم العريس <em>*</em></label>
+        <input class="in" id="f-name" name="name" required maxlength="80" autocomplete="off" placeholder="الاسم الثلاثي مع العائلة">
+      </div>
+
+      <div class="f">
+        <span class="legend">تاريخ الزواج <em>*</em></span>
+        <div class="mini" role="group" aria-label="نوع التقويم">
+          <button type="button" id="m-h" aria-pressed="true">هجري</button>
+          <button type="button" id="m-g" aria-pressed="false">ميلادي</button>
+        </div>
+        <div id="in-h" class="row3">
+          <select class="in" id="h-d" aria-label="اليوم"></select>
+          <select class="in" id="h-m" aria-label="الشهر"></select>
+          <select class="in" id="h-y" aria-label="السنة"></select>
+        </div>
+        <div id="in-g" hidden><input class="in" type="date" id="g-date" aria-label="التاريخ الميلادي"></div>
+        <div class="conv" id="conv" aria-live="polite"></div>
+      </div>
+
+      <div class="f">
+          <label for="f-city">المدينة</label>
+          <input class="in" id="f-city" name="city" list="cities" maxlength="40" value="بريدة">
+          <datalist id="cities"><option>بريدة</option><option>عنيزة</option><option>الرس</option><option>البكيرية</option><option>البدائع</option><option>المذنب</option><option>رياض الخبراء</option><option>الأسياح</option></datalist>
+      </div>
+
+      <div class="f">
+        <label for="f-hall">القاعة أو القصر <em>*</em></label>
+        <input class="in" id="f-hall" name="hall" required maxlength="80" placeholder="مثال: قاعة كادي">
+      </div>
+
+      <div class="f">
+        <label for="f-map">رابط الموقع في قوقل ماب <span class="hint">(اختياري)</span></label>
+        <input class="in" id="f-map" name="map" type="url" inputmode="url" dir="ltr" placeholder="https://maps.app.goo.gl/...">
+      </div>
+
+      <div class="f">
+        <label for="f-notes">ملاحظات <span class="hint">(اختياري)</span></label>
+        <textarea class="in" id="f-notes" name="notes" maxlength="300"></textarea>
+      </div>
+
+      <div class="f">
+        <label for="f-phone">رقم جوالك <span class="hint">(اختياري — لا يُنشر، للتواصل عند الحاجة فقط)</span></label>
+        <input class="in" id="f-phone" name="phone" type="tel" inputmode="tel" dir="ltr" placeholder="05xxxxxxxx" maxlength="20">
+      </div>
+
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="err" id="err" role="alert"></p>
+      <button class="btn btn-navy submit" id="send" type="submit">إرسال الطلب</button>
+    </form>
+  </div>
+
+  <div id="done-view" class="done" hidden>
+    <div class="ok"><svg class="i"><use href="#i-check"/></svg></div>
+    <h3 id="done-t">وصل طلبك، شكراً لك</h3>
+    <p id="done-p">سيظهر الزواج في الرزنامة بعد المراجعة.</p>
+    <button class="btn btn-navy" type="button" data-close>تم</button>
+  </div>
+</dialog>
+
+<!-- ============ نموذج المقترحات وطلبات التعديل ============ -->
+<dialog id="dlg2" aria-labelledby="dlg2-t">
+  <div id="sg-view">
+    <div class="dh">
+      <div><h2 id="dlg2-t">اقتراح أو طلب تعديل</h2><p>تصل رسالتك للإدارة مباشرة ولا تُنشر</p></div>
+      <button class="x" type="button" data-close aria-label="إغلاق"><svg class="i"><use href="#i-x"/></svg></button>
+    </div>
+    <form id="frm2" novalidate>
+      <div class="f">
+        <span class="legend">نوع الرسالة</span>
+        <div class="mini" role="radiogroup" id="sg-type">
+          <button type="button" data-t="طلب تعديل" aria-pressed="true">طلب تعديل</button>
+          <button type="button" data-t="اقتراح" aria-pressed="false">اقتراح</button>
+          <button type="button" data-t="أخرى" aria-pressed="false">أخرى</button>
+        </div>
+      </div>
+      <div class="f" id="sg-w-wrap">
+        <label for="sg-w">الزواج المعني</label>
+        <select class="in" id="sg-w" name="wedding"></select>
+      </div>
+      <div class="f">
+        <label for="sg-msg" id="sg-msg-l">ما التعديل المطلوب؟ <em>*</em></label>
+        <textarea class="in" id="sg-msg" name="message" maxlength="1000" rows="4" placeholder="مثال: تغيّر موعد الزواج إلى 20 جمادى الآخرة، أو تغيّرت القاعة"></textarea>
+      </div>
+      <div class="row">
+        <div class="f"><label for="sg-n">اسمك <span class="hint">(اختياري)</span></label><input class="in" id="sg-n" name="sender" maxlength="60"></div>
+        <div class="f"><label for="sg-p">جوالك <span class="hint">(اختياري)</span></label><input class="in" id="sg-p" name="phone" type="tel" dir="ltr" maxlength="20" placeholder="05xxxxxxxx"></div>
+      </div>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="err" id="err2" role="alert"></p>
+      <button class="btn btn-navy submit" id="send2" type="submit">إرسال</button>
+    </form>
+  </div>
+  <div id="sg-done" class="done" hidden>
+    <div class="ok"><svg class="i"><use href="#i-check"/></svg></div>
+    <h3>وصلت رسالتك، شكراً لك</h3>
+    <p>ستراجعها الإدارة وتُحدَّث الرزنامة عند الحاجة.</p>
+    <button class="btn btn-navy" type="button" data-close>تم</button>
+  </div>
+</dialog>
+
+<script>
+/* =========================================================
+   الإعداد: ضع رابط Web App (ينتهي بـ /exec) بين العلامتين
+   وإذا تُرك فارغاً تعمل الصفحة بوضع العرض ببيانات تجريبية
+   ========================================================= */
+const API_URL = 'https://script.google.com/macros/s/AKfycbyeBMB9BxhcBF5VajjeGbf_y2v2rFa0RI64ZrV9m4OSGB8XNBfgOakDrsgCxJDPKLpQ/exec';
+
+const TZ = 'Asia/Riyadh';
+const DEMO = [
+  {id:'demo1',name:'عبدالعزيز فريح البجيدي',date:'2026-11-26',city:'بريدة',hall:'قاعة كادي',map:'',time:'',notes:''},
+  {id:'demo2',name:'سلطان مهيدي العايد البجيدي',date:'2027-01-12',city:'بريدة',hall:'قصر المروكس للاحتفالات',map:'',time:'',notes:''}
+];
+
+/* ---------- التواريخ (أم القرى) ---------- */
+const L = 'ar-SA-u-nu-latn';
+const fH  = new Intl.DateTimeFormat('ar-SA-u-ca-islamic-umalqura-nu-latn',{timeZone:'UTC',day:'numeric',month:'long',year:'numeric'});
+const fHn = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura-nu-latn',{timeZone:'UTC',day:'numeric',month:'numeric',year:'numeric'});
+const fG  = new Intl.DateTimeFormat('ar-SA-u-ca-gregory-nu-latn',{timeZone:'UTC',day:'numeric',month:'long',year:'numeric'});
+const fGs = new Intl.DateTimeFormat('ar-SA-u-ca-gregory-nu-latn',{timeZone:'UTC',day:'numeric',month:'short'});
+const fGm = new Intl.DateTimeFormat('ar-SA-u-ca-gregory-nu-latn',{timeZone:'UTC',month:'long',year:'numeric'});
+const fW  = new Intl.DateTimeFormat('ar-SA-u-ca-gregory',{timeZone:'UTC',weekday:'long'});
+const HM = ['محرم','صفر','ربيع الأول','ربيع الآخر','جمادى الأولى','جمادى الآخرة','رجب','شعبان','رمضان','شوال','ذو القعدة','ذو الحجة'];
+
+const D = ymd => new Date(ymd+'T12:00:00Z');
+const ymdOf = dt => dt.toISOString().slice(0,10);
+const parts = (f,dt) => { const o={}; f.formatToParts(dt).forEach(p=>o[p.type]=p.value); return o; };
+function hijri(dt){ const p=parts(fHn,dt); return {d:+p.day, m:+p.month, y:+String(p.year).replace(/\D/g,'')}; }
+function hijriText(dt){ const h=hijri(dt); return `${h.d} ${HM[h.m-1]} ${h.y}هـ`; }
+function gregText(dt){ return fG.format(dt)+'م'; }
+function todayYmd(){ return new Intl.DateTimeFormat('en-CA',{timeZone:TZ}).format(new Date()); }
+function daysFrom(ymd){ return Math.round((D(ymd)-D(todayYmd()))/864e5); }
+function hijriToG(y,m,d){
+  const approx = Date.UTC(622,6,19) + ((y-1)*354.36707 + (m-1)*29.530589 + (d-1))*864e5;
+  for(let k=-45;k<=45;k++){
+    const dt=new Date(approx+k*864e5); dt.setUTCHours(12,0,0,0);
+    const h=hijri(dt); if(h.y===y&&h.m===m&&h.d===d) return dt;
+  }
+  return null;
+}
+function rel(n){
+  if(n===0) return 'الليلة';
+  if(n===1) return 'غداً';
+  if(n===2) return 'بعد يومين';
+  if(n>2&&n<=10) return `بعد ${n} أيام`;
+  if(n>10) return `بعد ${n} يوماً`;
+  const a=-n; return a===1?'أمس':a===2?'قبل يومين':a<=10?`قبل ${a} أيام`:`قبل ${a} يوماً`;
+}
+const esc = s => String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ic = id => `<svg class="i" aria-hidden="true"><use href="#i-${id}"/></svg>`;
+function fmtTime(t){ if(!t) return ''; const [h,m]=t.split(':').map(Number); if(isNaN(h)) return t; const pm=h>=12; return `${((h+11)%12)+1}:${String(m||0).padStart(2,'0')} ${pm?'مساءً':'صباحاً'}`; }
+
+/* ---------- اليوم ---------- */
+(function(){
+  const t=D(todayYmd());
+  document.getElementById('today').innerHTML =
+    `<span>${fW.format(t)}</span><span class="sep">|</span><b>${hijriText(t)}</b><span class="sep">|</span><span>${gregText(t)}</span>`;
+})();
+
+/* ---------- البيانات ---------- */
+let items=[], view='up';
+const CK='zawaj_feed_v1';
+async function load(){
+  if(!API_URL){ items=DEMO; render(); banner('وضع العرض: الصفحة غير مربوطة بالشيت بعد — البيانات المعروضة تجريبية.'); return; }
+  try{ const c=JSON.parse(localStorage.getItem(CK)||'null'); if(c&&c.items){ items=c.items; render(); } }catch(e){}
+  try{
+    const r=await fetch(API_URL,{cache:'no-store'}); const j=await r.json();
+    items=j.items||[]; render();
+    try{ localStorage.setItem(CK,JSON.stringify(j)); }catch(e){}
+  }catch(e){ if(!items.length){ render(); banner('تعذر تحميل الرزنامة. تحقق من الاتصال وأعد المحاولة.'); } }
+}
+function banner(t){ document.getElementById('banner').innerHTML=`<p class="banner">${esc(t)}</p>`; }
+
+/* ---------- العرض ---------- */
+function render(){
+  const up=items.filter(x=>daysFrom(x.date)>=0), past=items.filter(x=>daysFrom(x.date)<0).reverse();
+  document.getElementById('n-up').textContent=`(${up.length})`;
+  document.getElementById('n-past').textContent=past.length?`(${past.length})`:'';
+  renderFeatured(up[0]);
+  const list=view==='up'?up:past, el=document.getElementById('list');
+  if(!list.length){
+    el.innerHTML = view==='up'
+      ? `<div class="empty"><b>لا توجد زواجات قادمة حالياً</b>هل لديك زواج قريب؟ أضفه للرزنامة ليعلم الجميع.</div>`
+      : `<div class="empty"><b>لا توجد زواجات سابقة</b>تظهر هنا زواجات آخر شهرين.</div>`;
+    return;
+  }
+  let html='', cur='';
+  list.forEach(x=>{
+    const dt=D(x.date), h=hijri(dt), key=h.y+'-'+h.m;
+    if(key!==cur){ cur=key; html+=`<h2 class="month">${HM[h.m-1]} ${h.y}هـ <small>${fGm.format(dt)}م</small></h2>`; }
+    html+=card(x);
+  });
+  el.innerHTML=html;
+  const id=decodeURIComponent(location.hash.slice(1));
+  if(id){ const c=document.getElementById('w-'+id); if(c){ c.classList.add('hl'); setTimeout(()=>c.scrollIntoView({block:'center'}),150); } }
+}
+function card(x){
+  const dt=D(x.date), h=hijri(dt), n=daysFrom(x.date);
+  const chip = n===0?'now':(n>0&&n<=7?'soon':'');
+  return `<article class="card${n<0?' past':''}" id="w-${esc(x.id)}">
+    <div class="date"><span class="wd">${fW.format(dt)}</span><span class="d">${h.d}</span><span class="m">${HM[h.m-1]}</span><span class="g">${fGs.format(dt)}</span></div>
+    <div class="body">
+      <div class="top"><div><div class="lbl">زواج</div><div class="name">${esc(x.name)}</div></div><span class="chip ${chip}">${rel(n)}</span></div>
+      <div class="venue">${ic('pin')}<span>${esc([x.hall,x.city].filter(Boolean).join(' — '))}${x.time?` · ${fmtTime(x.time)}`:''}</span></div>
+      ${x.notes?`<div class="note">${esc(x.notes)}</div>`:''}
+      ${n>=0?`<div class="acts">
+        <a class="act map" href="${esc(mapUrl(x))}" target="_blank" rel="noopener">${ic('pin')}<span class="t">الموقع</span></a>
+        <button class="act" data-cal="${esc(x.id)}" aria-label="أضف لتقويمي">${ic('cal')}<span class="t">أضف لتقويمي</span></button>
+        <button class="act" data-share="${esc(x.id)}" aria-label="مشاركة">${ic('share')}<span class="t">مشاركة</span></button>
+      </div>`:''}
+    </div></article>`;
+}
+function renderFeatured(x){
+  const el=document.getElementById('featured');
+  if(!x){ el.innerHTML=''; el.style.display='none'; return; }
+  el.style.display='';
+  const dt=D(x.date), n=daysFrom(x.date);
+  el.innerHTML=`<div class="featured">
+    <span class="eyebrow">الزواج القادم</span>
+    <div class="f-name">${esc(x.name)}</div>
+    <div class="f-meta">
+      <span>${ic('cal')}${fW.format(dt)} ${hijriText(dt)} · ${gregText(dt)}</span>
+      <span>${ic('pin')}${esc([x.hall,x.city].filter(Boolean).join(' — '))}</span>
+      ${x.time?`<span>${ic('clock')}${fmtTime(x.time)}</span>`:''}
+    </div>
+    ${n===0?`<div class="f-tonight">الزواج الليلة — بارك الله لهما وبارك عليهما</div>`:
+      n===1?`<div class="f-tonight">الزواج غداً بإذن الله</div>`:
+      `<div class="days"><b>${n}</b><span>${dayUnit(n)}<small>على موعد الزواج</small></span></div>`}
+    <div class="acts" style="padding-top:16px">
+      <a class="act map" href="${esc(mapUrl(x))}" target="_blank" rel="noopener">${ic('pin')}<span class="t">الموقع</span></a>
+      <button class="act" data-cal="${esc(x.id)}" aria-label="أضف لتقويمي">${ic('cal')}<span class="t">أضف لتقويمي</span></button>
+      <button class="act" data-share="${esc(x.id)}" aria-label="مشاركة">${ic('share')}<span class="t">مشاركة</span></button>
+    </div></div>`;
+}
+function dayUnit(n){ return n===2?'يومان':(n>=3&&n<=10?'أيام':'يوماً'); }
+function mapUrl(x){ return x.map || 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent([x.hall,x.city].filter(Boolean).join(' ')); }
+
+/* ---------- التقويم والمشاركة ---------- */
+const byId = id => items.find(x=>String(x.id)===String(id));
+function addToCal(x){
+  const title='زواج '+x.name, loc=[x.hall,x.city].filter(Boolean).join(' - ');
+  const ymd=x.date.replace(/-/g,''), next=ymdOf(new Date(D(x.date).getTime()+864e5)).replace(/-/g,'');
+  let s,e,allDay=!x.time;
+  if(!allDay){ const st=new Date(`${x.date}T${x.time}:00+03:00`); const z=d=>d.toISOString().replace(/[-:]/g,'').slice(0,15)+'Z'; s=z(st); e=z(new Date(st.getTime()+4*3600e3)); }
+  if(/Android/i.test(navigator.userAgent)){
+    const u='https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent(title)+'&dates='+(allDay?`${ymd}/${next}`:`${s}/${e}`)+'&location='+encodeURIComponent(loc)+'&details='+encodeURIComponent(location.origin+location.pathname+'#'+x.id);
+    window.open(u,'_blank','noopener'); return;
+  }
+  const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//alanazii.com//zawaj//AR','CALSCALE:GREGORIAN','BEGIN:VEVENT',
+    'UID:'+x.id+'@alanazii.com','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').slice(0,15)+'Z',
+    allDay?'DTSTART;VALUE=DATE:'+ymd:'DTSTART:'+s, allDay?'DTEND;VALUE=DATE:'+next:'DTEND:'+e,
+    'SUMMARY:'+title,'LOCATION:'+loc,'DESCRIPTION:'+hijriText(D(x.date)),
+    'BEGIN:VALARM','TRIGGER:-P1D','ACTION:DISPLAY','DESCRIPTION:'+title,'END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar;charset=utf-8'}));
+  a.download='zawaj.ics'; document.body.appendChild(a); a.click(); setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},500);
+}
+async function share(x){
+  const dt=D(x.date), url=location.origin+location.pathname+'#'+encodeURIComponent(x.id);
+  const text=`دعوة لحضور زواج ${x.name}\n${fW.format(dt)} ${hijriText(dt)} الموافق ${gregText(dt)}\n${[x.hall,x.city].filter(Boolean).join(' — ')}${x.time?' · '+fmtTime(x.time):''}`;
+  if(navigator.share){ try{ await navigator.share({title:'زواج '+x.name,text,url}); return; }catch(e){ if(e.name==='AbortError') return; } }
+  window.open('https://wa.me/?text='+encodeURIComponent(text+'\n'+url),'_blank','noopener');
+}
+document.addEventListener('click',e=>{
+  const c=e.target.closest('[data-cal]'); if(c){ const x=byId(c.dataset.cal); if(x) addToCal(x); return; }
+  const s=e.target.closest('[data-share]'); if(s){ const x=byId(s.dataset.share); if(x) share(x); }
+});
+
+/* ---------- التبويبات ---------- */
+const tUp=document.getElementById('tab-up'), tPast=document.getElementById('tab-past');
+function setView(v){ view=v; tUp.setAttribute('aria-selected',v==='up'); tPast.setAttribute('aria-selected',v==='past'); render(); }
+tUp.onclick=()=>setView('up'); tPast.onclick=()=>setView('past');
+
+/* ---------- النموذج ---------- */
+const dlg=document.getElementById('dlg'), frm=document.getElementById('frm');
+const hd=document.getElementById('h-d'), hm=document.getElementById('h-m'), hy=document.getElementById('h-y'), gd=document.getElementById('g-date');
+const conv=document.getElementById('conv'), errEl=document.getElementById('err');
+let mode='h', picked=null;
+(function initSelects(){
+  const t=hijri(D(todayYmd()));
+  hd.innerHTML='<option value="">اليوم</option>'+Array.from({length:30},(_,i)=>`<option>${i+1}</option>`).join('');
+  hm.innerHTML='<option value="">الشهر</option>'+HM.map((m,i)=>`<option value="${i+1}">${i+1} — ${m}</option>`).join('');
+  hy.innerHTML=[t.y,t.y+1,t.y+2].map(y=>`<option>${y}</option>`).join('');
+  gd.min=todayYmd();
+})();
+function updateConv(){
+  picked=null; conv.classList.remove('bad');
+  let dt=null;
+  if(mode==='h'){
+    if(!hd.value||!hm.value){ conv.textContent='اختر اليوم والشهر'; return; }
+    dt=hijriToG(+hy.value,+hm.value,+hd.value);
+    if(!dt){ conv.textContent='هذا الشهر 29 يوماً فقط في تقويم أم القرى'; conv.classList.add('bad'); return; }
+  }else{
+    if(!gd.value){ conv.textContent='اختر التاريخ'; return; }
+    dt=D(gd.value);
+  }
+  const n=daysFrom(ymdOf(dt));
+  if(n<0){ conv.textContent='هذا التاريخ مضى'; conv.classList.add('bad'); return; }
+  picked=ymdOf(dt);
+  conv.innerHTML = mode==='g'
+    ? `<b>${fW.format(dt)}</b> ${gregText(dt)} — الموافق ${hijriText(dt)} <span style="opacity:.7">(${rel(n)})</span>`
+    : `<b>${fW.format(dt)}</b> ${hijriText(dt)} — الموافق ${gregText(dt)} <span style="opacity:.7">(${rel(n)})</span>`;
+}
+[hd,hm,hy,gd].forEach(el=>el.addEventListener('change',updateConv));
+gd.addEventListener('input',updateConv);
+function setMode(m){
+  mode=m; document.getElementById('m-h').setAttribute('aria-pressed',m==='h'); document.getElementById('m-g').setAttribute('aria-pressed',m==='g');
+  document.getElementById('in-h').hidden=m!=='h'; document.getElementById('in-g').hidden=m!=='g';
+  if(picked){ if(m==='g') gd.value=picked; else { const h=hijri(D(picked)); hd.value=h.d; hm.value=h.m; hy.value=h.y; } }
+  updateConv();
+}
+document.getElementById('m-h').onclick=()=>setMode('h');
+document.getElementById('m-g').onclick=()=>setMode('g');
+
+function openForm(){
+  frm.reset(); errEl.textContent=''; picked=null;
+  document.getElementById('form-view').hidden=false; document.getElementById('done-view').hidden=true;
+  document.getElementById('f-city').value='بريدة';
+  setMode(mode); dlg.showModal(); setTimeout(()=>document.getElementById('f-name').focus(),50);
+}
+document.getElementById('open-form').onclick=openForm;
+dlg.addEventListener('click',e=>{ if(e.target===dlg || e.target.closest('[data-close]')) dlg.close(); });
+
+frm.addEventListener('submit',async e=>{
+  e.preventDefault(); errEl.textContent='';
+  const btn=document.getElementById('send');
+  const fd=Object.fromEntries(new FormData(frm));
+  if(!fd.name.trim()) return fail('اكتب اسم العريس','f-name');
+  if(!picked) return fail('اختر تاريخ الزواج');
+  if(!fd.hall.trim()) return fail('اكتب اسم القاعة','f-hall');
+  const payload={...fd,date:picked,hijri:(h=>`${h.y}/${String(h.m).padStart(2,'0')}/${String(h.d).padStart(2,'0')}`)(hijri(D(picked)))};
+  btn.disabled=true; btn.textContent='جاري الإرسال…';
+  try{
+    let res={ok:true};
+    if(API_URL){ const r=await fetch(API_URL,{method:'POST',body:JSON.stringify(payload)}); res=await r.json(); }
+    else await new Promise(r=>setTimeout(r,700));
+    if(!res.ok) return fail(res.error||'تعذر الإرسال');
+    document.getElementById('done-t').textContent = res.duplicate?'يبدو أن هذا الزواج مسجّل مسبقاً':'وصل طلبك، شكراً لك';
+    document.getElementById('done-p').textContent = res.duplicate?'استلمنا طلبك وسيُراجَع، وإن كان تعديلاً على موعد سابق فسيُحدَّث.':'سيظهر الزواج في الرزنامة بعد المراجعة.';
+    document.getElementById('form-view').hidden=true; document.getElementById('done-view').hidden=false;
+    frm.reset(); document.getElementById('f-city').value='بريدة'; picked=null;
+  }catch(err){ fail('تعذر الإرسال، تحقق من الاتصال وحاول مجدداً'); }
+  finally{ btn.disabled=false; btn.textContent='إرسال الطلب'; }
+  function fail(m,id){ errEl.textContent=m; if(id) document.getElementById(id).focus(); btn.disabled=false; btn.textContent='إرسال الطلب'; }
+});
+function fail(m,id){ errEl.textContent=m; if(id) document.getElementById(id).focus(); }
+
+/* ---------- المقترحات ---------- */
+const dlg2=document.getElementById('dlg2'), frm2=document.getElementById('frm2'), err2=document.getElementById('err2');
+let sgType='طلب تعديل';
+function setSgType(t){
+  sgType=t;
+  document.querySelectorAll('#sg-type button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===t));
+  document.getElementById('sg-w-wrap').hidden = t!=='طلب تعديل';
+  document.getElementById('sg-msg-l').innerHTML = (t==='طلب تعديل'?'ما التعديل المطلوب؟':t==='اقتراح'?'اقتراحك':'رسالتك')+' <em>*</em>';
+  document.getElementById('sg-msg').placeholder = t==='طلب تعديل'?'مثال: تغيّر موعد الزواج إلى 20 جمادى الآخرة، أو تغيّرت القاعة':'';
+}
+document.getElementById('sg-type').addEventListener('click',e=>{ const b=e.target.closest('button'); if(b) setSgType(b.dataset.t); });
+document.getElementById('open-sug').onclick=()=>{
+  frm2.reset(); err2.textContent=''; setSgType('طلب تعديل');
+  const up=items.filter(x=>daysFrom(x.date)>=-7);
+  document.getElementById('sg-w').innerHTML='<option value="">— اختر الزواج —</option>'+up.map(x=>{ const v=`${x.name} — ${hijriText(D(x.date))}`; return `<option value="${esc(v)}">${esc(v)}</option>`; }).join('')+'<option value="غير مدرج">زواج غير مدرج</option>';
+  document.getElementById('sg-view').hidden=false; document.getElementById('sg-done').hidden=true;
+  dlg2.showModal();
+};
+dlg2.addEventListener('click',e=>{ if(e.target===dlg2 || e.target.closest('[data-close]')) dlg2.close(); });
+frm2.addEventListener('submit',async e=>{
+  e.preventDefault(); err2.textContent='';
+  const btn=document.getElementById('send2');
+  const fd=Object.fromEntries(new FormData(frm2));
+  if((fd.message||'').trim().length<3){ err2.textContent='اكتب رسالتك'; document.getElementById('sg-msg').focus(); return; }
+  btn.disabled=true; btn.textContent='جاري الإرسال…';
+  try{
+    let res={ok:true};
+    const payload={...fd,kind:'suggest',type:sgType,wedding:sgType==='طلب تعديل'?fd.wedding:''};
+    if(API_URL){ const r=await fetch(API_URL,{method:'POST',body:JSON.stringify(payload)}); res=await r.json(); }
+    else await new Promise(r=>setTimeout(r,600));
+    if(!res.ok){ err2.textContent=res.error||'تعذر الإرسال'; return; }
+    document.getElementById('sg-view').hidden=true; document.getElementById('sg-done').hidden=false;
+  }catch(_){ err2.textContent='تعذر الإرسال، تحقق من الاتصال'; }
+  finally{ btn.disabled=false; btn.textContent='إرسال'; }
+});
+
+load();
+</script>
+</body>
+</html>
